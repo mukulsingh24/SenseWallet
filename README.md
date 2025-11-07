@@ -1,7 +1,11 @@
 # 💰 Expense Tracker
 
 A **modern, full-stack expense management application** built with **React** (frontend) and **Node.js + Express + MongoDB** (backend). Track, manage, and categorize your expenses with an intuitive interface and powerful backend API.
+<<<<<<< HEAD
 
+=======
+---
+>>>>>>> d3e1bcce3ff269a39ab8f1207a756f0089d13494
 
 ## 📋 Project Overview
 
@@ -43,120 +47,7 @@ A **modern, full-stack expense management application** built with **React** (fr
 
 ---
 
-## 🛠️ Tech Stack
-
-### Frontend
-| Technology | Version | Purpose |
-|-----------|---------|---------|
-| React.js | 19.1.1 | UI framework |
-| Bootstrap | 5.x | CSS framework |
-| React Bootstrap | Latest | Bootstrap React components |
-| Vite | 7.1.7 | Build tool & dev server |
-| ESLint | 9.36.0 | Code quality |
-| CSS3 | Latest | Custom styling & animations |
-
-### Backend (To be implemented)
-| Technology | Version | Purpose |
-|-----------|---------|---------|
-| Node.js | 16+ | JavaScript runtime |
-| Express.js | 4.x | Web framework |
-| MongoDB | 4.4+ | NoSQL database |
-| Mongoose | 6.x | MongoDB ODM |
-| JWT | 8.x | Authentication |
-| Bcrypt | 5.x | Password encryption |
-| Cors | Latest | Cross-origin requests |
-| Dotenv | Latest | Environment variables |
-
----
-
-## 📂 Project Structure
-
-```
-Expense-Tracker/
-├── Frontend/                           # React frontend application
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── ExpenseFrom.jsx        # Expense form component
-│   │   │   ├── ExpenseList.jsx        # Expense list display
-│   │   │   └── ExpenseItem.jsx        # Individual expense item with edit/delete
-│   │   ├── App.jsx                    # Main app component
-│   │   ├── main.jsx                   # Entry point
-│   │   ├── index.css                  # Global styles & responsive design
-│   │   └── App.css
-│   ├── public/
-│   │   └── index.html
-│   ├── package.json
-│   ├── vite.config.js
-│   ├── eslint.config.js
-│   └── README.md                      # Frontend documentation
-│
-├── Backend/                            # Node.js/Express backend (To be created)
-│   ├── src/
-│   │   ├── models/
-│   │   │   ├── User.js               # User schema
-│   │   │   └── Expense.js            # Expense schema
-│   │   ├── routes/
-│   │   │   ├── auth.js               # Authentication routes
-│   │   │   ├── expenses.js           # Expense CRUD routes
-│   │   │   └── users.js              # User routes
-│   │   ├── controllers/
-│   │   │   ├── authController.js     # Authentication logic
-│   │   │   ├── expenseController.js  # Expense logic
-│   │   │   └── userController.js     # User logic
-│   │   ├── middleware/
-│   │   │   ├── auth.js               # Authentication middleware
-│   │   │   ├── errorHandler.js       # Error handling middleware
-│   │   │   └── validation.js         # Input validation
-│   │   ├── config/
-│   │   │   └── db.js                 # MongoDB connection
-│   │   ├── app.js                    # Express app setup
-│   │   └── server.js                 # Server entry point
-│   ├── .env.example
-│   ├── .gitignore
-│   ├── package.json
-│   └── README.md                      # Backend documentation
-│
-└── README.md                           # Project root documentation (This file)
-```
-
----
-
-## 💻 Frontend Setup
-
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Installation
-
-```bash
-# Navigate to Frontend directory
-cd Frontend
-
-# Install dependencies
-npm install
-
-# Install Bootstrap and React Bootstrap (if not already installed)
-npm install react-bootstrap bootstrap
-```
-
-### Running Frontend Development Server
-
-```bash
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
-
-# Run ESLint
-npm run lint
-```
-
-**Frontend will be available at:** `http://localhost:5174/`
+**Frontend will be available at:** `expensetracker9.vercel.app/`
 
 ### Frontend Features
 - Modern, responsive UI with Bootstrap
@@ -168,6 +59,7 @@ npm run lint
 
 ---
 
+<<<<<<< HEAD
 ## 🔧 Backend Setup (To be implemented)
 
 ### Prerequisites
@@ -350,6 +242,8 @@ POST   /api/users/change-password  Change password
 
 ---
 
+=======
+>>>>>>> d3e1bcce3ff269a39ab8f1207a756f0089d13494
 ## 📚 Future Enhancements
 
 - [ ] User authentication system
@@ -370,36 +264,13 @@ POST   /api/users/change-password  Change password
 
 ---
 
-## 🤝 Contributing
 
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### Development Guidelines
-- Write clean, readable code
-- Follow the existing project structure
-- Comment complex logic
-- Test your changes before submitting
-- Update documentation as needed
-
----
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
----
 
 ## 👨‍💻 Author
 
 **Mukul Singh**
 - GitHub: [@mukulsingh24](https://github.com/mukulsingh24)
-- Email: your.email@example.com
+- Email: rmks1004@example.com
 
 ---
 
@@ -409,25 +280,7 @@ For issues, questions, or suggestions, please create an issue on GitHub or conta
 
 ---
 
-## 🙏 Acknowledgments
-
-- React.js community
-- Bootstrap documentation
-- MongoDB documentation
-- Express.js guides
-- Contributors and users
-
----
 
 **Last Updated:** October 30, 2025
 
 **Status:** 🟡 Frontend Complete | 🔴 Backend Pending
-
----
-
-## Quick Links
-
-- [Frontend README](./Frontend/README.md)
-- [Backend README](./Backend/README.md) (To be created)
-- [GitHub Repository](https://github.com/mukulsingh24/Expense-Tracker)
-- [Live Demo](https://expense-tracker-demo.netlify.app) (When deployed)
