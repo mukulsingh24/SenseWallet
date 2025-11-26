@@ -1,11 +1,11 @@
-# 💰 Expense Tracker
+# 💰 SenseWallet
 
 A **modern, full-stack expense management application** built with **React** (frontend) and **Node.js + Express + MongoDB** (backend). Track, manage, and categorize your expenses with an intuitive interface and powerful backend API.
 
 
 ## 📋 Project Overview
 
-**Expense Tracker** is a comprehensive web application designed to help users efficiently manage their personal and business expenses. The application features:
+**SenseWallet** is a comprehensive web application designed to help users efficiently manage their personal and business expenses. The application features:
 
 - **Frontend:** A responsive React.js interface with Bootstrap styling for a modern user experience
 - **Backend:** RESTful API built with Node.js and Express for robust server-side operations
@@ -72,7 +72,7 @@ A **modern, full-stack expense management application** built with **React** (fr
 ## 📂 Project Structure
 
 ```
-Expense-Tracker/
+SenseWallet/
 ├── Frontend/                           # React frontend application
 │   ├── src/
 │   │   ├── components/
@@ -119,219 +119,6 @@ Expense-Tracker/
 └── README.md                           # Project root documentation (This file)
 ```
 
----
-
-## 💻 Frontend Setup
-
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Installation
-
-```bash
-# Navigate to Frontend directory
-cd Frontend
-
-# Install dependencies
-npm install
-
-# Install Bootstrap and React Bootstrap (if not already installed)
-npm install react-bootstrap bootstrap
-```
-
-### Running Frontend Development Server
-
-```bash
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
-
-# Run ESLint
-npm run lint
-```
-
-**Frontend will be available at:** `http://localhost:5174/`
-
-### Frontend Features
-- Modern, responsive UI with Bootstrap
-- Side-by-side layout (form left, list right) on desktop
-- Mobile-optimized stacked layout on tablets and phones
-- Real-time expense updates
-- Edit and delete functionality
-- Category-based organization
-
----
-
-## 🔧 Backend Setup (To be implemented)
-
-### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn
-- MongoDB (Local or MongoDB Atlas)
-
-### Installation
-
-```bash
-# Create Backend directory
-mkdir Backend
-cd Backend
-
-# Initialize Node.js project
-npm init -y
-
-# Install dependencies
-npm install express mongoose cors dotenv bcryptjs jsonwebtoken
-npm install --save-dev nodemon
-
-# Create folder structure
-mkdir -p src/models src/routes src/controllers src/middleware src/config
-```
-
-### Required Dependencies
-
-```json
-{
-  "dependencies": {
-    "express": "^4.18.2",
-    "mongoose": "^6.8.0",
-    "cors": "^2.8.5",
-    "dotenv": "^16.0.3",
-    "bcryptjs": "^2.4.3",
-    "jsonwebtoken": "^9.0.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.20"
-  }
-}
-```
-
-### Package.json Scripts
-
-```json
-{
-  "scripts": {
-    "start": "node src/server.js",
-    "dev": "nodemon src/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
-}
-```
-
-### Backend Features (To be implemented)
-- User authentication with JWT
-- CRUD operations for expenses
-- MongoDB integration for data persistence
-- Input validation and error handling
-- CORS configuration for frontend communication
-
----
-
-## 🔌 API Endpoints
-
-### Authentication Endpoints (Backend)
-```
-POST   /api/auth/register          Create new user account
-POST   /api/auth/login             User login with credentials
-POST   /api/auth/logout            User logout
-POST   /api/auth/refresh-token     Refresh JWT token
-GET    /api/auth/verify            Verify JWT token validity
-```
-
-### Expense Endpoints (Backend)
-```
-GET    /api/expenses               Get all expenses for user
-GET    /api/expenses/:id           Get specific expense details
-POST   /api/expenses               Create new expense
-PUT    /api/expenses/:id           Update expense details
-DELETE /api/expenses/:id           Delete expense
-GET    /api/expenses/filter        Filter expenses by date/category
-```
-
-### User Endpoints (Backend)
-```
-GET    /api/users/profile          Get user profile
-PUT    /api/users/profile          Update user profile
-DELETE /api/users/profile          Delete user account
-POST   /api/users/change-password  Change password
-```
-
----
-
-
-## 📝 Frontend Components Overview
-
-### App.jsx
-- Main application component
-- Manages global expense state
-- Handles API communication (will be implemented with backend)
-- Props: addExpense, deleteExpense, updateExpense
-
-### ExpenseForm.jsx
-- Form for adding new expenses
-- Input fields: Name, Amount, Category
-- Form validation
-- Props: addExpense callback
-
-### ExpenseList.jsx
-- Displays all expenses in a scrollable container
-- Shows expense details with category badges
-- Handles edit and delete operations
-- Props: expenses array, edit/delete callbacks
-
-### ExpenseItem.jsx
-- Individual expense item with action buttons
-- Edit button: Shows inline input for editing
-- Delete button: Removes expense
-- Save button: Confirms edit
-
----
-
-## 🎨 Frontend Styling
-
-### Color Scheme
-- **Primary:** #6366f1 (Indigo)
-- **Success:** #10b981 (Green)
-- **Danger:** #ef4444 (Red)
-- **Background:** Purple to violet gradient
-
-### Responsive Breakpoints
-- **Desktop (>768px):** 2-column layout
-- **Tablet (768px):** Single column, stacked
-- **Mobile (<480px):** Mobile-optimized
-
-### CSS Classes
-```css
-.form-container      /* Main form wrapper */
-.list-container      /* Expenses list wrapper */
-.expense-card        /* Individual expense item */
-.btn-add            /* Add expense button */
-.btn-edit           /* Edit button */
-.btn-delete         /* Delete button */
-.btn-save           /* Save edit button */
-.expense-type       /* Category badge */
-```
-
----
-
-## 🔐 Security Features (Backend)
-
-- ✅ JWT-based authentication
-- ✅ Password encryption with bcryptjs
-- ✅ CORS configuration for frontend communication
-- ✅ Input validation and sanitization
-- ✅ Error handling and logging
-- ✅ Environment variables for sensitive data
-- ✅ Rate limiting (to be implemented)
-- ✅ Data encryption (to be implemented)
-
----
-
 ## 📈 Performance Optimization
 
 ### Frontend
@@ -370,64 +157,8 @@ POST   /api/users/change-password  Change password
 
 ---
 
-## 🤝 Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### Development Guidelines
-- Write clean, readable code
-- Follow the existing project structure
-- Comment complex logic
-- Test your changes before submitting
-- Update documentation as needed
-
----
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
----
-
-## 👨‍💻 Author
-
-**Mukul Singh**
-- GitHub: [@mukulsingh24](https://github.com/mukulsingh24)
-- Email: your.email@example.com
-
----
-
 ## 📞 Support
 
 For issues, questions, or suggestions, please create an issue on GitHub or contact the author.
 
 ---
-
-## 🙏 Acknowledgments
-
-- React.js community
-- Bootstrap documentation
-- MongoDB documentation
-- Express.js guides
-- Contributors and users
-
----
-
-**Last Updated:** October 30, 2025
-
-**Status:** 🟡 Frontend Complete | 🔴 Backend Pending
-
----
-
-## Quick Links
-
-- [Frontend README](./Frontend/README.md)
-- [Backend README](./Backend/README.md) (To be created)
-- [GitHub Repository](https://github.com/mukulsingh24/Expense-Tracker)
-- [Live Demo](https://expense-tracker-demo.netlify.app) (When deployed)
